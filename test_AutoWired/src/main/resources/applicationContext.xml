@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean id="cat" class="com.test_spring.pojo.Cat"></bean>
+    <bean id="dog" class="com.test_spring.pojo.Dog"></bean>
+
+    <bean id="people01" class="com.test_spring.pojo.People">
+        <property name="name" value="人"></property>
+        <property name="cat" ref="cat"></property>
+        <property name="dog" ref="dog"></property>
+    </bean>
+    <!--自动装配byType-->
+    <!--    <bean id="people02" class="com.test_spring.pojo.People" autowire="byType">-->
+    <!--        <property name="name" value="people02"></property>-->
+    <!--    </bean>-->
+    <!--自动装配byName-->
+    <bean id="people03" class="com.test_spring.pojo.People" autowire="byName">
+        <property name="name" value="people03"></property>
+    </bean>
+    <!--开启注解支持-->
+    <context:annotation-config/>
+    <bean id="cat_gami" class="com.test_spring.pojo.Cat">
+        <property name="name" value="gami"></property>
+    </bean>
+    <bean id="anno_people" class="com.test_spring.pojo.People_Anno">
+        <property name="name" value="anno01"></property>
+    </bean>
+
+</beans>

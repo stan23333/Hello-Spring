@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Mybatis-Spring" />
+        <module name="test_AutoWired" />
+        <module name="test_DI" />
+        <module name="test_Spring01" />
+        <module name="test_Ioc" />
+        <module name="test_Proxy" />
+        <module name="test_Aop" />
+        <module name="test_Annotation_NoXml" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

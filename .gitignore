@@ -1,0 +1,3 @@
+# Project exclude paths
+/Mybatis-Spring/target/
+/test_Aop/target/
